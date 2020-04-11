@@ -1,5 +1,5 @@
 html {
-  font-family: "Oxanium", cursive;
+  font-family: "Oxanium", sans-serif;
   background-color: #212121;
   /* background: url(grid.svg) repeat center center fixed; */
   background-size: 2em 2em;
@@ -18,11 +18,12 @@ select,
 textarea,
 .pure-g [class*="pure-u"] {
   /* Set your content font stack here: */
-  font-family: "Oxanium", cursive;
+  font-family: "Oxanium", sans-serif;
 }
 
 #content {
   padding: 5%;
+  margin: 0;
 }
 
 #splash {
@@ -34,7 +35,7 @@ textarea,
   vertical-align: middle;
   box-shadow: rgba(0, 0, 0, 0.8) 0 0 1em inset;
   text-shadow: rgba(0, 0, 0, 1) 0 0 1em;
-  background: url(background.png) no-repeat center right 30% fixed;
+  background: url(background.jpg) no-repeat 58% 60%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -82,8 +83,9 @@ textarea,
   margin: 1vh 1vw;
   backdrop-filter: blur(0.2em);
   color: #dddddd;
-  border-width: 0 0 8px 0;
-  border-color: #ffffffab;
+  border-width: 2px;
+  border-color: rgba(58, 255, 189, 0.26);
+  border-style: solid;
 }
 
 #splash .pure-menu-link {
@@ -100,19 +102,40 @@ textarea,
 
 .pure-menu-link:hover {
   color: black;
+  transform: scale(1.2, 1.2);
 }
 
 #splash .pure-menu-link:active {
   border-radius: 2em 2em 2em 2em;
   background-color: rgba(58, 255, 189, 1);
   box-shadow: white 0 0 1em;
+  color: black;
   transition: all 0.1s;
+  transform: scale(1.5, 1.5);
 }
 
 .project-card {
-  background-color: rgba(58, 255, 189, 1);
-  color: black;
-  box-shadow: rgba(0, 0, 0, 0.8) 0 0 1em inset;
-  border-radius: 1em 1em 1em 1em;
-  margin: 1vw;
+  background-color: rgba(0, 0, 0, 0.144);
+  border-radius: 0.3em 0.3em 0.3em 0.3em;
+  margin: 2vh 0vw 1.5vh 0vw;
+  padding: 1.5vh 1vw 1.5vh 1vw;
+  background: rgb(22, 34, 19);
+  background: linear-gradient(
+    180deg,
+    rgba(58, 255, 189, 0.247) 0%,
+    rgba(255, 255, 255, 0) 12em
+  );
+}
+
+.project-card h1 {
+  padding: 0;
+  margin: 0.1vh;
+}
+
+.video-caption {
+  background-color: rgba(7, 7, 7, 0.185);
+  margin-top: 0;
+  border-radius: 0 0 0.3em 0.3em;
+  align-content: left;
+  padding: 0.1em 1em;
 }
