@@ -5,6 +5,7 @@ if (urlParams.has('furry')) {
         el.style.display = 'none';
         console.log("ha furry!");
     });
+    document.title = "hare_ware - Homepage"
 } else {
     [].forEach.call(document.querySelectorAll('.furriesOnly'), function (el) {
         el.style.display = 'none';
