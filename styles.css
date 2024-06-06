@@ -1,7 +1,7 @@
 html {
   font-family: "Iosevka", "Oxanium", sans-serif;
-    background: rgb(25, 25, 27);
-    /* background: radial-gradient(circle, rgba(72, 68, 83, 1) 0%, rgba(52, 50, 64, 1) 100%); */
+  background: rgb(25, 25, 27);
+  /* background: radial-gradient(circle, rgba(72, 68, 83, 1) 0%, rgba(52, 50, 64, 1) 100%); */
   /* background: url(grid.svg) repeat center center fixed; */
   background-size: 2em 2em;
   background-image: radial-gradient(circle, #ff8725c4 0.01em, rgba(0, 0, 0, 0) 1px);
@@ -16,7 +16,7 @@ textarea,
 .pure-g [class*="pure-u"] {
   /* Set your content font stack here: */
   font-family: "Iosevka", "Oxanium", sans-serif;
-    font-size: larger;
+  font-size: larger;
 }
 
 #content {
@@ -32,22 +32,24 @@ textarea,
   margin-left: auto;
   margin-right: auto;
 }
+
 #splash {
   background-color: black;
   padding: 10%;
   align-items: center;
   margin: 2vh 2.5vw;
-    border-radius: 1em;
-    height: 33vh;
+  border-radius: 1em;
+  height: 33vh;
   vertical-align: middle;
   box-shadow: rgba(0, 0, 0, 0.6) 0 0 2em;
-    text-shadow: rgba(0, 0, 0, 0.6) 0 0 3em;
-    background: url(background.webp) no-repeat 58% 60%;
+  text-shadow: rgba(0, 0, 0, 0.6) 0 0 3em;
+  background: url(background.webp) no-repeat 58% 60%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
+
 #splash #jumbo-logo {
   max-width: 75%;
   margin: 0;
@@ -72,7 +74,6 @@ textarea,
 
 #splash-small h1 {
   font-size: 3vw;
-  font-weight: 500;
   padding: 0;
   margin: 1vh;
 }
@@ -83,9 +84,9 @@ textarea,
   padding: 0;
   margin: 1vh;
   line-height: 80%;
-    font-family: "Rubik Mono One", monospace;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
 
 #splash h2 {
@@ -95,10 +96,9 @@ textarea,
 #splash h2,
 #splash p,
 #splash #animated-text-strip {
-  font-weight: 200;
   padding: 0.4em;
   margin: 1vh;
-border-radius: 0.1em;
+  border-radius: 0.1em;
   background-color: #0000006c;
   backdrop-filter: blur(0.2em);
 }
@@ -106,11 +106,11 @@ border-radius: 0.1em;
 #menu {
   padding: 0.1vh 3vw;
   /* align-items: center; */
-    /* vertical-align: middle; */
-    margin: 0 0;
-    /* position: fixed; */
-  
-    max-width: fit-content(50vw);
+  /* vertical-align: middle; */
+  margin: 0 0;
+  /* position: fixed; */
+
+  max-width: fit-content(50vw);
 }
 
 #menu .pure-menu-link {
@@ -127,15 +127,15 @@ border-radius: 0.1em;
   border-radius: 0.2em 0.2em 0.2em 0.2em;
   transition: all 0.2s;
   margin: 1.25vh 1vw;
-    background-color: #0000006c;
-    backdrop-filter: blur(0.2em);
+  background-color: #0000006c;
+  backdrop-filter: blur(0.2em);
   color: #dddddd;
   border-width: 2px;
   border-color: rgba(255, 104, 17, 0.829);
   border-style: solid;
   padding: 1.75vh 5vw;
-    font-size: 1.0em;
-    vertical-align: middle;
+  font-size: 1.0em;
+  vertical-align: middle;
 }
 
 #menu .pure-menu-link {
@@ -160,12 +160,12 @@ border-radius: 0.1em;
   box-shadow: white 0 0 1em;
   color: black;
   transition: all 0.05s;
-    transform: scale(.99, .99);
-  }
-  
-  #menu .pure-menu-link i {
-  
-    padding: 0 0.5em;
+  transform: scale(.99, .99);
+}
+
+#menu .pure-menu-link i {
+
+  padding: 0 0.5em;
 }
 
 .project-card {
@@ -189,6 +189,7 @@ border-radius: 0.1em;
   align-content: left;
   padding: 0.1em 1em;
 }
+
 /* Core functionality */
 #animated-text-strip {
   display: flex;
