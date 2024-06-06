@@ -1,6 +1,7 @@
 // (function () {
 const urlParams = new URLSearchParams(window.location.search);
-if (urlParams.has('awoo')) {
+// if (urlParams.has('awoo')) {
+if (true) {
     [].forEach.call(document.querySelectorAll('.hoomansOnly'), function (el) {
         el.style.display = 'none';
         console.log("ha furry!");
