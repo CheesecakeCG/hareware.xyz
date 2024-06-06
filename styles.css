@@ -147,20 +147,20 @@ border-radius: 0.1em;
   background-color: #3f1c0eb4;
   box-shadow: rgba(255, 163, 58, 0.815) 0 0 1em;
   border-color: rgb(255, 255, 255);
-  transition: all 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.1s;
 }
 
 .pure-menu-link:hover {
   color: black;
-  transform: scale(1.05, 1.05);
+  transform: scale(1.02, 1.02);
 }
 
 #menu .pure-menu-link:active {
   background-color: rgb(255, 97, 49);
   box-shadow: white 0 0 1em;
   color: black;
-  transition: all 0.1s;
-  transform: scale(.95, 95);
+  transition: all 0.05s;
+    transform: scale(.99, .99);
   }
   
   #menu .pure-menu-link i {
