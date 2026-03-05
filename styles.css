@@ -1,11 +1,15 @@
 html {
-  font-family: "Iosevka", "Oxanium", sans-serif;
-  background: rgb(25, 25, 27);
-  /* background: radial-gradient(circle, rgba(72, 68, 83, 1) 0%, rgba(52, 50, 64, 1) 100%); */
-  /* background: url(grid.svg) repeat center center fixed; */
-  background-size: 2em 2em;
-  background-image: radial-gradient(circle, #ff8725c4 0.01em, rgba(0, 0, 0, 0) 1px);
-  color: #eeeeee;
+    font-family: "Iosevka", "Oxanium", sans-serif;
+    background: rgb(25, 25, 27);
+    /* background: radial-gradient(circle, rgba(72, 68, 83, 1) 0%, rgba(52, 50, 64, 1) 100%); */
+    /* background: url(grid.svg) repeat center center fixed; */
+    background-size: 2em 2em;
+    background-image: radial-gradient(
+        circle,
+        #ff8725c4 0.01em,
+        rgba(0, 0, 0, 0) 1px
+    );
+    color: #eeeeee;
 }
 
 html,
@@ -14,208 +18,211 @@ input,
 select,
 textarea,
 .pure-g [class*="pure-u"] {
-  /* Set your content font stack here: */
-  font-family: "Iosevka", "Oxanium", sans-serif;
-  font-size: larger;
+    /* Set your content font stack here: */
+    font-family: "Iosevka", "Oxanium", sans-serif;
+    font-size: larger;
 }
 
 #content {
-  padding: 5%;
-  margin: 0;
-  max-width: fit-content(20em);
+    padding: 5%;
+    margin: 0;
+    max-width: fit-content(20em);
 }
 
 #landing {
-  margin: 2vh 2.5vw;
-  max-width: 1440px;
-  /* max-width: fit-content; */
-  margin-left: auto;
-  margin-right: auto;
+    margin: 2vh 2.5vw;
+    max-width: 1440px;
+    /* max-width: fit-content; */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #splash {
-  background-color: black;
-  padding: 10%;
-  align-items: center;
-  margin: 2vh 2.5vw;
-  border-radius: 1em;
-  height: 33vh;
-  vertical-align: middle;
-  box-shadow: rgba(0, 0, 0, 0.6) 0 0 2em;
-  text-shadow: rgba(0, 0, 0, 0.6) 0 0 3em;
-  background: url(background.webp) no-repeat 58% 60%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background-color: black;
+    padding: 10%;
+    align-items: center;
+    margin: 2vh 2.5vw;
+    border-radius: 1em;
+    height: 33vh;
+    vertical-align: middle;
+    box-shadow: rgba(0, 0, 0, 0.6) 0 0 2em;
+    text-shadow: rgba(0, 0, 0, 0.6) 0 0 3em;
+    background: url(background.webp) no-repeat 58% 60%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #splash #jumbo-logo {
-  max-width: 75%;
-  margin: 0;
-  padding: 0;
+    max-width: 75%;
+    margin: 0;
+    padding: 0;
 }
 
 #splash-small {
-  background-color: black;
-  padding: 5%;
-  align-items: center;
-  border-radius: 0em 0em 2.5em 2.5em;
-  height: 10vh;
-  vertical-align: bottom;
-  box-shadow: rgba(0, 0, 0, 0.8) 0 0 1em inset;
-  text-shadow: rgba(0, 0, 0, 1) 0 0 1em;
-  background: url(background.jpg) no-repeat 58% 60%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background-color: black;
+    padding: 5%;
+    align-items: center;
+    border-radius: 0em 0em 2.5em 2.5em;
+    height: 10vh;
+    vertical-align: bottom;
+    box-shadow: rgba(0, 0, 0, 0.8) 0 0 1em inset;
+    text-shadow: rgba(0, 0, 0, 1) 0 0 1em;
+    background: url(background.webp) no-repeat 58% 60%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #splash-small h1 {
-  font-size: 3vw;
-  padding: 0;
-  margin: 1vh;
+    font-size: 3vw;
+    padding: 0;
+    margin: 1vh;
 }
 
 #splash h1 {
-  font-size: 8vw;
-  font-weight: 500;
-  padding: 0;
-  margin: 1vh;
-  line-height: 80%;
-  font-family: "Rubik Mono One", monospace;
-  font-weight: 400;
-  font-style: normal;
+    font-size: 8vw;
+    font-weight: 500;
+    padding: 0;
+    margin: 1vh;
+    line-height: 80%;
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #splash h2 {
-  font-size: 3vh;
+    font-size: 3vh;
 }
 
 #splash h2,
 #splash p,
 #splash #animated-text-strip {
-  padding: 0.4em;
-  margin: 1vh;
-  border-radius: 0.1em;
-  background-color: #0000006c;
-  backdrop-filter: blur(0.2em);
+    padding: 0.4em;
+    margin: 1vh;
+    border-radius: 0.1em;
+    background-color: #0000006c;
+    backdrop-filter: blur(0.2em);
 }
 
 #menu {
-  padding: 0.1vh 3vw;
-  /* align-items: center; */
-  /* vertical-align: middle; */
-  margin: 0 0;
-  /* position: fixed; */
+    padding: 0.1vh 3vw;
+    /* align-items: center; */
+    /* vertical-align: middle; */
+    margin: 0 0;
+    /* position: fixed; */
 
-  max-width: fit-content(50vw);
+    max-width: fit-content(50vw);
 }
 
 #menu .pure-menu-link {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 #menu .pure-menu {
-  margin: 1vh;
-  margin-left: -1rem;
-  border-radius: 0.2em 0.2em 0.2em 0.2em;
+    margin: 1vh;
+    margin-left: -1rem;
+    border-radius: 0.2em 0.2em 0.2em 0.2em;
 }
 
 .pure-menu-link {
-  border-radius: 0.2em 0.2em 0.2em 0.2em;
-  transition: all 0.2s;
-  margin: 1.25vh 1vw;
-  background-color: #0000006c;
-  backdrop-filter: blur(0.2em);
-  color: #dddddd;
-  border-width: 2px;
-  border-color: rgba(255, 104, 17, 0.829);
-  border-style: solid;
-  padding: 1.75vh 5vw;
-  font-size: 1.0em;
-  vertical-align: middle;
+    border-radius: 0.2em 0.2em 0.2em 0.2em;
+    transition: all 0.2s;
+    margin: 1.25vh 1vw;
+    background-color: #0000006c;
+    backdrop-filter: blur(0.2em);
+    color: #dddddd;
+    border-width: 2px;
+    border-color: rgba(255, 104, 17, 0.829);
+    border-style: solid;
+    padding: 1.75vh 5vw;
+    font-size: 1em;
+    vertical-align: middle;
 }
 
 #menu .pure-menu-link {
-  background-color: #0000007c;
-  text-shadow: rgba(255, 163, 58, 0.5) 0 0 1em;
+    background-color: #0000007c;
+    text-shadow: rgba(255, 163, 58, 0.5) 0 0 1em;
 }
 
 #menu .pure-menu-link:hover {
-  background-color: #3f1c0eb4;
-  box-shadow: rgba(255, 163, 58, 0.815) 0 0 1em;
-  border-color: rgb(255, 255, 255);
-  transition: all 0.1s;
+    background-color: #3f1c0eb4;
+    box-shadow: rgba(255, 163, 58, 0.815) 0 0 1em;
+    border-color: rgb(255, 255, 255);
+    transition: all 0.1s;
 }
 
 .pure-menu-link:hover {
-  color: black;
-  transform: scale(1.02, 1.02);
+    color: black;
+    transform: scale(1.02, 1.02);
 }
 
 #menu .pure-menu-link:active {
-  background-color: rgb(255, 97, 49);
-  box-shadow: white 0 0 1em;
-  color: black;
-  transition: all 0.05s;
-  transform: scale(.99, .99);
+    background-color: rgb(255, 97, 49);
+    box-shadow: white 0 0 1em;
+    color: black;
+    transition: all 0.05s;
+    transform: scale(0.99, 0.99);
 }
 
 #menu .pure-menu-link i {
-
-  padding: 0 0.5em;
+    padding: 0 0.5em;
 }
 
 .project-card {
-  background-color: rgba(0, 0, 0, 0.144);
-  border-radius: 0.3em 0.3em 0.3em 0.3em;
-  margin: 2vh 0vw 1.5vh 0vw;
-  padding: 1.5vh 1vw 1.5vh 1vw;
-  background: rgb(22, 34, 19);
-  background: linear-gradient(180deg, rgba(58, 255, 189, 0.247) 0%, rgba(255, 255, 255, 0) 12em);
+    background-color: rgba(0, 0, 0, 0.144);
+    border-radius: 0.3em 0.3em 0.3em 0.3em;
+    margin: 2vh 0vw 1.5vh 0vw;
+    padding: 1.5vh 1vw 1.5vh 1vw;
+    background: rgb(22, 34, 19);
+    background: linear-gradient(
+        180deg,
+        rgba(58, 255, 189, 0.247) 0%,
+        rgba(255, 255, 255, 0) 12em
+    );
 }
 
 .project-card h1 {
-  padding: 0;
-  margin: 0.1vh;
+    padding: 0;
+    margin: 0.1vh;
 }
 
 .video-caption {
-  background-color: rgba(7, 7, 7, 0.185);
-  margin-top: 0;
-  border-radius: 0 0 0.3em 0.3em;
-  align-content: left;
-  padding: 0.1em 1em;
+    background-color: rgba(7, 7, 7, 0.185);
+    margin-top: 0;
+    border-radius: 0 0 0.3em 0.3em;
+    align-content: left;
+    padding: 0.1em 1em;
 }
 
 /* Core functionality */
 #animated-text-strip {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    overflow: hidden;
 }
 
 #animated-text-strip .marquee {
-  white-space: nowrap;
-  animation: marquee 90s linear infinite;
-  max-width: none;
+    white-space: nowrap;
+    animation: marquee 90s linear infinite;
+    max-width: none;
 }
 
 @keyframes marquee {
-  0% {
-    transform: translate(0, 0);
-  }
+    0% {
+        transform: translate(0, 0);
+    }
 
-  100% {
-    transform: translate(-100%, 0);
-  }
+    100% {
+        transform: translate(-100%, 0);
+    }
 }
 
 /* Styles for the sake of the demonstration */
 #animated-text-strip {
-  background: black;
-  padding: 1rem 0;
+    background: black;
+    padding: 1rem 0;
 }
