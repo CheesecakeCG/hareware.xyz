@@ -1,3 +1,11 @@
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
 html {
     font-family: "Iosevka", "Oxanium", sans-serif;
     background: rgb(25, 25, 27);
@@ -10,6 +18,7 @@ html {
         rgba(0, 0, 0, 0) 1px
     );
     color: #eeeeee;
+    line-height: 2;
 }
 
 html,
@@ -24,8 +33,8 @@ textarea,
 }
 
 #content {
-    padding: 5%;
-    margin: 0;
+    padding: 0.5vh 2.5vw;
+    margin: 0.5vh 0.5vw;
     max-width: fit-content(20em);
 }
 
@@ -108,7 +117,7 @@ textarea,
 }
 
 #menu {
-    padding: 0.1vh 3vw;
+    padding: 0.1vh 6vw;
     /* align-items: center; */
     /* vertical-align: middle; */
     margin: 0 0;
@@ -121,23 +130,24 @@ textarea,
     color: #ffffff;
 }
 
-#menu .pure-menu {
+#menu .pure-menu,
+#menu .pure-menu-horizontal {
     margin: 1vh;
-    margin-left: -1rem;
-    border-radius: 0.2em 0.2em 0.2em 0.2em;
+    /*margin-left: -1rem;*/
+    border-radius: 0.2em;
 }
 
 .pure-menu-link {
-    border-radius: 0.2em 0.2em 0.2em 0.2em;
+    border-radius: 0.2em;
     transition: all 0.2s;
-    margin: 1.25vh 1vw;
+    margin: 1.25vh 0.5em;
     background-color: #0000006c;
     backdrop-filter: blur(0.2em);
     color: #dddddd;
     border-width: 2px;
     border-color: rgba(255, 104, 17, 0.829);
     border-style: solid;
-    padding: 1.75vh 5vw;
+    padding: 1.75vh 1.5vw;
     font-size: 1em;
     vertical-align: middle;
 }
@@ -172,21 +182,36 @@ textarea,
 }
 
 .project-card {
-    background-color: rgba(0, 0, 0, 0.144);
-    border-radius: 0.3em 0.3em 0.3em 0.3em;
+    background-color: rgba(255, 10, 28, 0.26);
+    border-radius: 1em;
     margin: 2vh 0vw 1.5vh 0vw;
-    padding: 1.5vh 1vw 1.5vh 1vw;
-    background: rgb(22, 34, 19);
+    padding: 1.5vh 1em 1.5vh 1em;
     background: linear-gradient(
         180deg,
-        rgba(58, 255, 189, 0.247) 0%,
-        rgba(255, 255, 255, 0) 12em
+        rgba(255, 120, 28, 0.26) 0%,
+        rgba(60, 10, 20, 0.1) 8em,
+        rgba(0, 0, 0, 0.1)
     );
+    box-shadow: rgba(200, 60, 28, 0.2) 0 0 0.5em;
+    text-shadow: rgba(200, 60, 28, 0.2) 0 0 0.25em;
+}
+
+.project-card h1,
+.project-card h2 {
+    padding: 0;
+    margin: 0.1vh;
+    padding-top: 2vh;
+    line-height: 80%;
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .project-card h1 {
-    padding: 0;
-    margin: 0.1vh;
+    font-size: 3em;
+}
+.project-card h2 {
+    font-size: 2em;
 }
 
 .video-caption {
@@ -225,4 +250,153 @@ textarea,
 #animated-text-strip {
     background: black;
     padding: 1rem 0;
+}
+
+/* Image Gallery Stuff */
+
+div.scroll-container-outer {
+    left: -15%;
+    position: relative;
+    width: 130%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    border-radius: 1em;
+
+    scrollbar-color: #ff8725c4 transparent;
+    scrollbar-width: none;
+
+    --mask: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0) 1%,
+            rgba(0, 0, 0, 1) 8%,
+            rgba(0, 0, 0, 1) 92%,
+            rgba(0, 0, 0, 0) 99%
+        )
+        100% 100% / 100% 100% no-repeat;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+}
+
+div.scroll-container-inner {
+    /*background-color: #333;*/
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin: 0.75em;
+    padding: 0 6em;
+    /*border-radius: 1em;s*/
+}
+
+div.scroll-container-inner img {
+    height: 30vh;
+    margin: 0.25em;
+    border-radius: 0.5em;
+    transition: all 0.05s;
+}
+
+div.scroll-container-inner img:hover {
+    transform: scale(1.02, 1.02);
+}
+
+div.scroll-container-inner img:active {
+    transform: scale(0.9, 0.9);
+}
+
+#lightBox {
+    /*display: block;
+    opacity: 1;*/
+
+    display: none;
+    opacity: 0;
+
+    position: fixed;
+    background-color: rgba(15, 8, 0, 0.7);
+    backdrop-filter: blur(1em);
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 800;
+    transition:
+        opacity 0.2s,
+        transform 0.15s,
+        display 0.2s allow-discrete;
+    background: linear-gradient(
+        180deg,
+        rgba(30, 16, 2, 0.7),
+        rgba(0, 0, 0, 0.7)
+    );
+
+    align-content: center;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+    margin: auto;
+    display: block;
+    /*padding: 8vh;*/
+
+    /* Size slide images */
+    width: 90%;
+    height: 90%;
+
+    align-items: center;
+    /*margin: 2vh 2.5vw;*/
+    border-radius: 0.25em;
+    object-fit: contain;
+
+    transition:
+        opacity 0.1s,
+        transform 0.08s,
+        display 0.2s allow-discrete;
+}
+
+.container img {
+    border-radius: 0.25em;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Expanding image text */
+#imgtext {
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+    z-index: 801;
+    position: fixed;
+    top: 0;
+    right: 0;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    background-color: rgba(15, 8, 2, 0.9);
+    border-radius: 0.5em;
+    margin: 1.5em;
+    align-content: center;
+    text-align: center;
+    width: 2.5em;
+    height: 2.5em;
+    padding: auto;
+}
+
+.shownLightBox {
+    opacity: 1 !important;
+    display: block !important;
+    transform: scale(1, 1);
+}
+.shownLightBox .container {
+    transform: scale(1, 1);
+}
+
+@starting-style {
+    .shownLightBox {
+        opacity: 0 !important;
+    }
+    .shownLightBox .container {
+        transform: scale(0.8, 0.8);
+    }
 }

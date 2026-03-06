@@ -1,0 +1,328 @@
+<!doctype html>
+<html>
+    <head>
+        <title>hare_ware's Portfolio</title>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+        <meta content="utf-8" http-equiv="encoding" />
+
+        <!--[if lte IE 8]>
+            <link
+                rel="stylesheet"
+                href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css"
+            />
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css"
+        />
+        <!--<![endif]-->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
+            integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="../lib/fontawesome-free-6.5.2-web/css/fontawesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="../lib/fontawesome-free-6.5.2-web/css/brands.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="../lib/fontawesome-free-6.5.2-web/css/solid.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="../lib/PkgWebFont-Iosevka-30.1.1/Iosevka.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap"
+            rel="stylesheet"
+        />
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>-->
+
+        <link href="../styles.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+
+    <body>
+        <div id="lightBox" onclick="this.classList.remove('shownLightBox')">
+            <script>
+                let lightbox = document.getElementById("lightBox");
+                function showLightbox(imgs) {
+                    // Get the expanded image
+                    var expandImg = document.getElementById("expandedImg");
+                    // Get the image text
+                    var imgText = document.getElementById("imgtext");
+                    // Use the same src in the expanded image as the image being clicked on from the grid
+                    expandImg.src = imgs.src;
+                    // Use the value of the alt attribute of the clickable image as text inside the expanded image
+                    // imgText.innerHTML = imgs.alt;
+                    // Show the container element (hidden with CSS)
+                    lightbox.classList.add("shownLightBox");
+
+                    expandImg.style.transform = `translateY(${ev.clientY - 25}px)`;
+                    expandImg.style.transform += `translateX(${ev.clientX - 25}px)`;
+                }
+            </script>
+            <!-- Close the image -->
+            <button
+                onclick="this.parentElement.parentElement.classList.remove('shownLightBox')"
+                class="closebtn pure-button"
+            >
+                &times;
+            </button>
+            <div class="container">
+                <!-- Expanded image -->
+                <img id="expandedImg" />
+
+                <!-- Image text -->
+                <!--<div id="imgtext"></div>-->
+            </div>
+        </div>
+        <div id="landing">
+            <div id="splash" style="height: 20vh">
+                <img
+                    src="../images/logo2024.svg"
+                    alt="hare_ware"
+                    id="jumbo-logo"
+                />
+            </div>
+            <div id="content">
+                <div class="project-card">
+                    <h1>shorkobot!</h1>
+                    <h3>shark? orca? kobold‽ robot?!!</h3>
+                    <p>
+                        Shorkobot is a social VR avatar&nbsp;originally made for
+                        the 2024 VRChat Summer Jam, with the theme "Summer Music
+                        Festival". <br />
+                    </p>
+                    <div class="scroll-container-outer">
+                        <div class="scroll-container-inner">
+                            <img
+                                src="../images/skx/multiplebodytypes2-small.png.webp"
+                                alt="The shark has customizable body shapes, with 6 shape zones that get bigger or smaller."
+                                onclick="showLightbox(this);"
+                            />
+                            <img
+                                src="../images/skx/VRChat_2026-03-04_21-23-15.webp"
+                                alt="VRChat screenshot of the shark"
+                                onclick="showLightbox(this);"
+                            />
+                            <img
+                                src="../images/skx/EnhancedLighting.png.webp"
+                                alt="The shark has support for enhanced lighting like LTCGI, VRC Light Volumes, and Audiolink"
+                                onclick="showLightbox(this);"
+                            />
+                            <img
+                                src="../images/skx/VRChat_2026-03-04_21-24-31.webp"
+                                alt="VRChat_2026"
+                                onclick="showLightbox(this);"
+                            />
+                            <img
+                                src="../images/skx/bliss.png.webp"
+                                alt="Enter shork enduced bliss, the shark is standing in a room filled with blahaj plushies."
+                                onclick="showLightbox(this);"
+                            />
+                            <img
+                                src="../images/skx/VRChat_2026-03-04_21-22-11.webp"
+                                alt="VRChat_2026"
+                                onclick="showLightbox(this);"
+                            />
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <strong>Good </strong>Performance Ranking on PC &
+                            Medium on Mobile
+                        </li>
+                        <li>
+                            <strong>AudioLink</strong> Integration, including a
+                            "Holo-Ocean" effect
+                        </li>
+                        <li>
+                            <strong>LTCGI & VRCLV</strong> Support for better
+                            lighting in clubs & movie worlds!
+                        </li>
+                        <li>
+                            Don't like the default look? There's
+                            <strong>In-game Customization:</strong>
+                            <ul>
+                                <li>
+                                    <strong>Hue-Shift Sliders</strong> with
+                                    Quest Support!
+                                </li>
+                                <li>
+                                    Texture Layer Toggles (for those that prefer
+                                    not to be a bot, or don't want to be covered
+                                    in stickers.)
+                                </li>
+                                <li>Tail Puppet!</li>
+                                <li>
+                                    6 Body Shape Sliders that go bigger
+                                    <em><em>and</em></em> smaller!
+                                </li>
+                            </ul>
+                        </li>
+                        <li><strong>Full-Body</strong> Tracking Support</li>
+                        <li><strong>Quest</strong> & Android Phone Support</li>
+                        <li>
+                            Uses Unity <strong>Prefab Variants</strong> for
+                            easier editing
+                        </li>
+                    </ul>
+                    <p>
+                        While the avatar itself is mostly complete,
+                        <strong
+                            >this project as whole is still a<em>
+                                work-in-progress!</em
+                            ></strong
+                        >
+                        Blender files as well as VRM, Resonite, and Overte
+                        support are planned and there is still further room for
+                        optimization.&nbsp;
+                    </p>
+                    <p>
+                        Here is&nbsp;the legacy&nbsp;<a
+                            href="https://vrchat.com/home/avatar/avtr_7d98d9c6-a0e3-487e-a846-ba90c1cb45d0"
+                            target="_blank"
+                            >Public VRChat Avatar</a
+                        >.<strong>
+                            This is a really old version of the avatar</strong
+                        >.
+                    </p>
+                    <div class="pure-g">
+                        <div class="pure-menu-item pure-u-1-1">
+                            <a
+                                href="https://vrchat.com/home/world/wrld_3e4f0826-948c-4797-ad9d-932c7221016a/store?listingType=all&sortBy=newest"
+                                rel="me"
+                                class="pure-menu-link"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                <i class="fa-solid fa-vr-cardboard"></i>
+                                Try or Buy Shorkobot in VRChat!</a
+                            >
+                        </div>
+                        <div class="pure-menu-horizontal">
+                            <div class="pure-menu-item pure-u-1-2">
+                                <a
+                                    href="https://hare-ware.itch.io/shorkobot"
+                                    rel="me"
+                                    class="pure-menu-link"
+                                    target="_blank"
+                                    rel="noopener"
+                                    ><i class="fa-brands fa-itch-io"></i> Buy
+                                    now on Itch.io</a
+                                >
+                            </div>
+                            <div class="pure-menu-item pure-u-1-2">
+                                <a
+                                    href="https://jinxxy.com/hare_ware/shorkobot"
+                                    rel="me"
+                                    class="pure-menu-link"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fa-solid fa-store"></i> Buy now on
+                                    Jinxxy</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h1>Experiment Avatars</h1>
+                    <h2>OTT2</h2>
+                    <p>This is a work in progress otter avatar base.</p>
+                    <div class="scroll-container-outer">
+                        <div class="scroll-container-inner">
+                            <img
+                                src="../images/ott2/VRChat_2026-03-04_00-06-05.webp"
+                                onclick="showLightbox(this);"
+                            />
+                            <img
+                                src="../images/ott2/VRChat_2026-03-04_00-05-05.webp"
+                                onclick="showLightbox(this);"
+                            />
+                            <img
+                                src="../images/ott2/VRChat_2026-03-04_00-01-30.webp"
+                                onclick="showLightbox(this);"
+                            />
+                            <img
+                                src="../images/ott2/2026-02-11%2010-27-52.webp"
+                                onclick="showLightbox(this);"
+                            />
+                            <img
+                                src="../images/ott2/2026-02-11%2010-28-33.webp"
+                                onclick="showLightbox(this);"
+                            />
+                        </div>
+                    </div>
+                    <p>
+                        I'm using this avatar as a test bed for creating a
+                        universal face rig, so I can reuse face-tracking,
+                        viseme, and expressions between all my avatars.
+                    </p>
+                    <div class="pure-menu-item pure-u-1-1">
+                        <a
+                            href="https://vrchat.com/home/avatar/avtr_e678eeb3-25ae-41cc-9e14-36f384b77dd9"
+                            rel="me"
+                            class="pure-menu-link"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <i class="fa-solid fa-vr-cardboard"></i>
+                            Try hw_OTT2 in VRChat!</a
+                        >
+                    </div>
+
+                    <h2>HOWLOWL</h2>
+                    <p>
+                        This is a work in progress owl (with some mammal & cat
+                        influence) avatar base. This avatar was created mainly
+                        as retopology practice.
+                    </p>
+
+                    <div class="scroll-container-outer">
+                        <div class="scroll-container-inner">
+                            <img
+                                src="../images/howlowl/Screenshot%20from%202026-01-04%2007-31-54.webp"
+                                onclick="showLightbox(this);"
+                            />
+                            <img
+                                src="../images/howlowl/VRChat_2026-03-03_23-46-17.webp"
+                                onclick="showLightbox(this);"
+                            />
+                            <img
+                                src="../images/howlowl/VRChat_2026-03-03_23-45-10.webp"
+                                onclick="showLightbox(this);"
+                            />
+                            <img
+                                src="../images/howlowl/VRChat_2026-03-03_23-45-58.webp"
+                                onclick="showLightbox(this);"
+                            />
+                            <img
+                                src="../images/howlowl/Screenshot%20from%202026-01-04%2018-12-16.webp"
+                                onclick="showLightbox(this);"
+                            />
+                        </div>
+                    </div>
+                    <h2>Retextures</h2>
+
+                    <h2>Assorted WIPs</h2>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
