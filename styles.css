@@ -270,7 +270,7 @@ div.scroll-container-outer {
     overflow-x: scroll;
     overflow-y: hidden;
     border-radius: 1em;
-
+    display: flex;
     scrollbar-color: #ff8725c4 transparent;
     scrollbar-width: none;
 
@@ -297,10 +297,12 @@ div.scroll-container-inner {
 
 div.scroll-container-inner img {
     height: 30em;
+    max-height: 40vh;
     margin: 0.25em;
     border-radius: 0.5em;
     transition: all 0.05s;
 }
+
 .standalone-media {
     border-radius: 0.5em;
 }
