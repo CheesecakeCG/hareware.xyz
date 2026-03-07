@@ -70,9 +70,6 @@
                     // imgText.innerHTML = imgs.alt;
                     // Show the container element (hidden with CSS)
                     lightbox.classList.add("shownLightBox");
-
-                    expandImg.style.transform = `translateY(${ev.clientY - 25}px)`;
-                    expandImg.style.transform += `translateX(${ev.clientX - 25}px)`;
                 }
             </script>
             <!-- Close the image -->
@@ -93,7 +90,7 @@
         <div id="landing">
             <div id="splash" style="height: 20vh">
                 <img
-                    src="../images/logo2024.svg"
+                    src="/images/logo2024.svg"
                     alt="hare_ware"
                     id="jumbo-logo"
                 />
@@ -110,32 +107,32 @@
                     <div class="scroll-container-outer">
                         <div class="scroll-container-inner">
                             <img
-                                src="../images/skx/multiplebodytypes2-small.png.webp"
+                                src="/images/skx/multiplebodytypes2-small.png.webp"
                                 alt="The shark has customizable body shapes, with 6 shape zones that get bigger or smaller."
                                 onclick="showLightbox(this);"
                             />
                             <img
-                                src="../images/skx/VRChat_2026-03-04_21-23-15.webp"
+                                src="/images/skx/VRChat_2026-03-04_21-23-15.webp"
                                 alt="VRChat screenshot of the shark"
                                 onclick="showLightbox(this);"
                             />
                             <img
-                                src="../images/skx/EnhancedLighting.png.webp"
+                                src="/images/skx/EnhancedLighting.png.webp"
                                 alt="The shark has support for enhanced lighting like LTCGI, VRC Light Volumes, and Audiolink"
                                 onclick="showLightbox(this);"
                             />
                             <img
-                                src="../images/skx/VRChat_2026-03-04_21-24-31.webp"
+                                src="/images/skx/VRChat_2026-03-04_21-24-31.webp"
                                 alt="VRChat_2026"
                                 onclick="showLightbox(this);"
                             />
                             <img
-                                src="../images/skx/bliss.png.webp"
+                                src="/images/skx/bliss.png.webp"
                                 alt="Enter shork enduced bliss, the shark is standing in a room filled with blahaj plushies."
                                 onclick="showLightbox(this);"
                             />
                             <img
-                                src="../images/skx/VRChat_2026-03-04_21-22-11.webp"
+                                src="/images/skx/VRChat_2026-03-04_21-22-11.webp"
                                 alt="VRChat_2026"
                                 onclick="showLightbox(this);"
                             />
@@ -243,28 +240,46 @@
                 </div>
                 <div class="project-card">
                     <h1>Experimental Avatars</h1>
+                    <h2>BUN2</h2>
+                    <p>
+                        This is a remake of the rabbit base I originally announced at Furality Umbra. After the con with all the feedback I recieved, I made the hard decision to not release the original rabbit base. I've taken the years since to refocus on improving my fundementals and am rebuilding the rabbit to be the best that it can be.
+                    </p>
+                    <div class="scroll-container-outer">
+                        <div class="scroll-container-inner">
+                    <img src="/images/bun2/VRChat_2026-03-04_15-01-36.webp" onclick="showLightbox(this);"/>
+                    <img src="/images/bun2/Screenshot%20from%202026-03-06%2019-40-41.webp" onclick="showLightbox(this);"/>
+                    <img src="/images/bun2/Screenshot%20from%202026-03-06%2019-38-55.webp" onclick="showLightbox(this);"/>
+                    <img src="/images/bun2/Screenshot%20from%202026-03-06%2019-38-34.webp" onclick="showLightbox(this);"/>
+                        </div>
+                    </div>
+                    <p style="border-right-width: 4px; border-color: orange;">
+                        "Late is just for a little while. Suck is forever."
+                        <span style="text-align: left !important;"> ~ Gabe Newell</span>
+                    </p>
+
+
                     <h2>OTT2</h2>
                     <p>This is a work in progress otter avatar base.</p>
                     <div class="scroll-container-outer">
                         <div class="scroll-container-inner">
                             <img
-                                src="../images/ott2/VRChat_2026-03-04_00-06-05.webp"
+                                src="/images/ott2/VRChat_2026-03-04_00-06-05.webp"
                                 onclick="showLightbox(this);"
                             />
                             <img
-                                src="../images/ott2/VRChat_2026-03-04_00-05-05.webp"
+                                src="/images/ott2/VRChat_2026-03-04_00-05-05.webp"
                                 onclick="showLightbox(this);"
                             />
                             <img
-                                src="../images/ott2/VRChat_2026-03-04_00-01-30.webp"
+                                src="/images/ott2/VRChat_2026-03-04_00-01-30.webp"
                                 onclick="showLightbox(this);"
                             />
                             <img
-                                src="../images/ott2/2026-02-11%2010-27-52.webp"
+                                src="/images/ott2/2026-02-11%2010-27-52.webp"
                                 onclick="showLightbox(this);"
                             />
                             <img
-                                src="../images/ott2/2026-02-11%2010-28-33.webp"
+                                src="/images/ott2/2026-02-11%2010-28-33.webp"
                                 onclick="showLightbox(this);"
                             />
                         </div>
@@ -274,7 +289,8 @@
                         universal face rig, so I can reuse face-tracking,
                         viseme, and expressions between all my avatars.
                     </p>
-                    <div class="pure-menu-item pure-u-1-1">
+                    <video class="pure-u-1-1 standalone-media" src="/images/ott2/output.webm" autoplay="" muted="" loop="" controls=""></video>
+                    <!--<div class="pure-menu-item pure-u-1-1">
                         <a
                             href="https://vrchat.com/home/avatar/avtr_e678eeb3-25ae-41cc-9e14-36f384b77dd9"
                             rel="me"
@@ -285,7 +301,20 @@
                             <i class="fa-solid fa-vr-cardboard"></i>
                             Try hw_OTT2 in VRChat!</a
                         >
-                    </div>
+                    </div>-->
+
+                    <h2>The Antitaur</h2>
+                    <p>
+                        This is the opposite of a taur! They're a quadrupedal dragon with mechancial arms attach at the base of their neck. This is a on going experiment with using advanced rigging techniques with VRChat's avatar system.
+                    </p>
+
+                    <img
+                        class="pure-u-1-1 standalone-media"
+                        src="/images/antitaur/VRChat_2026-03-03_23-35-32.webp"
+                        onclick="showLightbox(this);"
+                    />
+
+
 
                     <h2>HOWLOWL</h2>
                     <p>
@@ -297,30 +326,65 @@
                     <div class="scroll-container-outer">
                         <div class="scroll-container-inner">
                             <img
-                                src="../images/howlowl/Screenshot%20from%202026-01-04%2007-31-54.webp"
+                                src="/images/howlowl/Screenshot%20from%202026-01-04%2007-31-54.webp"
                                 onclick="showLightbox(this);"
                             />
                             <img
-                                src="../images/howlowl/VRChat_2026-03-03_23-46-17.webp"
+                                src="/images/howlowl/VRChat_2026-03-03_23-46-17.webp"
                                 onclick="showLightbox(this);"
                             />
                             <img
-                                src="../images/howlowl/VRChat_2026-03-03_23-45-10.webp"
+                                src="/images/howlowl/VRChat_2026-03-03_23-45-10.webp"
                                 onclick="showLightbox(this);"
                             />
                             <img
-                                src="../images/howlowl/VRChat_2026-03-03_23-45-58.webp"
+                                src="/images/howlowl/VRChat_2026-03-03_23-45-58.webp"
                                 onclick="showLightbox(this);"
                             />
                             <img
-                                src="../images/howlowl/Screenshot%20from%202026-01-04%2018-12-16.webp"
+                                src="/images/howlowl/Screenshot%20from%202026-01-04%2018-12-16.webp"
                                 onclick="showLightbox(this);"
                             />
                         </div>
                     </div>
-                    <h2>Retextures</h2>
+                </div>
+                <div class="project-card">
+                    <h1>Retextures</h1>
+                    <p>Here are some retexture + mesh-edit avatars I've done on <a href="https://sapcec.com/avali/" target="_blank">Sapcec's Sap'vali</a>, on Darbi's SweetHooves, and my own rat base.</p>
+                    <div class="scroll-container-outer">
+                        <div class="scroll-container-inner">
+                            <img src="/images/retextures/VRChat_2026-03-03_23-28-39-crop.webp" onclick="showLightbox(this);"/>
+                            <img src="/images/retextures/VRChat_2026-03-03_23-31-27.webp" onclick="showLightbox(this);"/>
+                            <img src="/images/retextures/VRChat_2025-06-24_00-39-13.webp" onclick="showLightbox(this);"/>
+                            <img src="/images/retextures/VRChat_2025-06-24_00-34-13.webp" onclick="showLightbox(this);"/>
+                            <img src="/images/retextures/VRChat_2025-06-24_00-36-55.webp" onclick="showLightbox(this);"/>
+                            <img src="/images/retextures/VRChat_2025-06-24_00-32-04-crop.webp" onclick="showLightbox(this);"/>
+                            <img src="/images/retextures/VRChat_2026-03-04_21-12-38.webp" onclick="showLightbox(this);"/>
+                            <img src="/images/retextures/VRChat_2026-03-04_21-13-41.webp" onclick="showLightbox(this);"/>
+                            <img src="/images/retextures/VRChat_2026-03-04_21-13-09.webp" onclick="showLightbox(this);"/>
 
-                    <h2>Assorted WIPs</h2>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h1>Other Avatars</h1>
+                    <p>Here's a random assortment of avatar projects I've worked on! These might be more familar to some.</p>
+                    <div class="scroll-container-outer">
+                        <div class="scroll-container-inner">
+                    <img src="/images/other_ava/other-avatar-furality-nosmoke.webp" onclick="showLightbox(this);"></img>
+                    <img src="/images/other_ava/hare_ware%20yearbook%20photo%20comp2-final-downsampled.webp" onclick="showLightbox(this);"></img>
+                    <img src="/images/other_ava/VRChat_2024-07-06_11-34-32.webp" onclick="showLightbox(this);"></img>
+                    <img src="/images/other_ava/VRChat_2024-07-06_11-34-46.webp" onclick="showLightbox(this);"></img>
+                    <img src="/images/other_ava/VRChat_2026-03-04_21-04-44.webp" onclick="showLightbox(this);"></img>
+                    <img src="/images/other_ava/VRChat_2026-03-04_20-47-24.webp" onclick="showLightbox(this);"></img>
+                    <img src="/images/other_ava/VRChat_2025-04-27_08-48-56.webp" onclick="showLightbox(this);"></img>
+                    <img src="/images/other_ava/green4.webp" onclick="showLightbox(this);"></img>
+                    <img src="/images/other_ava/VRChat_2024-10-22_17-49-05.webp" onclick="showLightbox(this);"></img>
+                    <img src="/images/other_ava/VRChat_2025-04-08_22-55-39.webp" onclick="showLightbox(this);"></img>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>

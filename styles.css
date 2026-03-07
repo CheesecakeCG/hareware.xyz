@@ -19,6 +19,9 @@ html {
     );
     color: #eeeeee;
     line-height: 2;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 html,
@@ -52,7 +55,7 @@ textarea,
     align-items: center;
     margin: 2vh 2.5vw;
     border-radius: 1em;
-    height: 33vh;
+    height: 33em;
     vertical-align: middle;
     box-shadow: rgba(0, 0, 0, 0.6) 0 0 2em;
     text-shadow: rgba(0, 0, 0, 0.6) 0 0 3em;
@@ -65,7 +68,7 @@ textarea,
 
 #splash #jumbo-logo {
     max-width: 75%;
-    margin: 0;
+    margin: auto;
     padding: 0;
 }
 
@@ -287,17 +290,22 @@ div.scroll-container-inner {
 }
 
 div.scroll-container-inner img {
-    height: 30vh;
+    height: 30em;
     margin: 0.25em;
     border-radius: 0.5em;
     transition: all 0.05s;
 }
+.standalone-media {
+    border-radius: 0.5em;
+}
 
-div.scroll-container-inner img:hover {
+div.scroll-container-inner img:hover,
+.project-card img:active {
     transform: scale(1.02, 1.02);
 }
 
-div.scroll-container-inner img:active {
+div.scroll-container-inner img:active,
+.project-card img:active {
     transform: scale(0.9, 0.9);
 }
 
