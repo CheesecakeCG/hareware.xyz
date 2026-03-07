@@ -184,6 +184,12 @@ textarea,
     padding: 0 0.5em;
 }
 
+hr {
+    color: rgb(255, 150, 60, 0.8);
+    margin: 1em 0;
+    box-shadow: rgba(255, 97, 49, 0.5) 0 0 0.5em;
+}
+
 .project-card {
     background-color: rgba(255, 10, 28, 0.26);
     border-radius: 1em;
