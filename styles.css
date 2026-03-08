@@ -286,9 +286,9 @@ hr {
 /* Image Gallery Stuff */
 
 div.scroll-container-outer {
-    left: -15%;
+    left: -10%;
     position: relative;
-    width: 130%;
+    width: 120%;
     overflow-x: scroll;
     overflow-y: hidden;
     border-radius: 1em;
@@ -318,8 +318,8 @@ div.scroll-container-inner {
 }
 
 div.scroll-container-inner img {
-    height: 30em;
-    max-height: 40vh;
+    height: 50em;
+    max-height: 60vh;
     margin: 0.25em;
     border-radius: 0.5em;
     transition: all 0.05s;
